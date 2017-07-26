@@ -1,15 +1,16 @@
 
 alias md="mkdir"
-alias smd="sudo mkdir"
+alias smd="sudo md"
 alias rd="rmdir" #rm -r
 alias frd="rm -rf"
-alias srd="sudo rmdir"
+alias srd="sudo rd"
 alias lsf="ls | grep"
 alias term="xdotool key ctrl+shift+t"
 alias win="xdotool key ctrl+shift+n"
 alias see="thunar"
-alias ins="sudo apt-get update;sudo apt-get install -y"
+alias update="sudo apt-get update"
 alias i="sudo apt-get install"
+alias ins="update;i -y"
 alias unins="sudo apt-get purge"
 alias pdf="qpdfview"
 alias xo="xdg-open"
@@ -26,7 +27,6 @@ alias f5d="f5fpc --stop"
 alias dskv="desktop-file-validate"
 alias wt="curl wttr.in/egham"
 alias edit="nano -iOx"
-alias update="sudo apt-get update"
 alias sedit="sudo nano"
 alias npmReset="rm -rf node_modules; npm i"
 alias emptyTrash="cd .local/share/Trash/files/; rm -rf *;cd -"
@@ -39,4 +39,4 @@ export PYDIR="${DB}/Script/py"
 export APP="${HOME}/Apps"
 export CDRIVE="${HOME}/.wine/drive_c/"
 
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
